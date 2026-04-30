@@ -48,23 +48,12 @@
     Python • Data Analysis • Visualization
   </text>
 
-  <!-- Your Name (branding) -->
+  <!-- Branding -->
   <text x="50%" y="80%" text-anchor="middle"
         font-family="Segoe UI, Arial, sans-serif"
         font-size="14"
         fill="#94a3b8">
     Built by Alen Kuriakose Padappanackal
   </text>
-
-  <!-- Animated graph line -->
-  <polyline points="150,190 250,150 350,170 450,120 550,140"
-            fill="none"
-            stroke="url(#neon)"
-            stroke-width="3"
-            filter="url(#glow)"
-            stroke-dasharray="600"
-            stroke-dashoffset="600">
-    <animate attributeName="stroke-dashoffset" from="600" to="0" dur="2s" repeatCount="indefinite"/>
-  </polyline>
 
 </svg>
