@@ -1,0 +1,60 @@
+import matplotlib.pyplot as plt
+
+def get_data():
+    n = int(input("Enter number of students: "))
+    names = []
+    marks = []
+
+    for i in range(n):
+        name = input("Enter name: ")
+        mark = int(input("Enter marks: "))
+        names.append(name)
+        marks.append(mark)
+
+    return names, marks
+
+
+def analyze_data(marks):
+    total = sum(marks)
+    avg = total / len(marks)
+    highest = max(marks)
+    lowest = min(marks)
+
+    return total, avg, highest, lowest
+
+
+def show_graphs(names, marks):
+    # Line Graph
+    plt.figure()
+    plt.plot(names, marks, marker='o')
+    plt.title("Student Performance - Line Graph")
+    plt.xlabel("Students")
+    plt.ylabel("Marks")
+    plt.show()
+
+    # Bar Graph
+    plt.figure()
+    plt.bar(names, marks)
+    plt.title("Student Performance - Bar Graph")
+    plt.xlabel("Students")
+    plt.ylabel("Marks")
+    plt.show()
+
+
+def main():
+    names, marks = get_data()
+    total, avg, highest, lowest = analyze_data(marks)
+
+    print("\n--- Analysis ---")
+    print("Total:", total)
+    print("Average:", avg)
+    print("Highest:", highest)
+    print("Lowest:", lowest)
+
+    topper = names[marks.index(highest)]
+    print("Topper:", topper)
+
+    show_graphs(names, marks)
+
+
+main()
