@@ -1,6 +1,5 @@
-<!-- BANNER -->
 <p align="center">
-  <img src="banner.svg" alt="Student Performance Visualizer Banner" />
+  <img src="assets/banner.svg" alt="Banner" />
 </p>
 
 <h1 align="center">📊 Student Performance Visualizer</h1>
